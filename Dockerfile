@@ -24,4 +24,4 @@ RUN bundle install
 COPY . /app
 
 EXPOSE 3000
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "/app/entrypoint.sh" ]

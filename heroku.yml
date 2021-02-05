@@ -7,7 +7,7 @@ build:
     web: Dockerfile
 release:
   command:
-    - release.sh
+    - /app/release.sh
   image: web
 run:
   web: bundle exec puma -C config/puma.rb
